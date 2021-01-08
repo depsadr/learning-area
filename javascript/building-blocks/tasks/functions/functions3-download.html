@@ -30,6 +30,16 @@
     let para = document.createElement('p');
 
     // Add your code here
+    
+    function random() {
+      return names[Math.floor(Math.random() * names.length)];
+    }
+
+    function chooseName() {
+      return random();
+    }
+
+    para.textContent = chooseName();
 
     // Don't edit the code below here!
 
