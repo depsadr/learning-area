@@ -42,6 +42,15 @@
     let color = 'blue';
 
     // Add your code here
+    
+    function draw () {
+      ctx.clearRect(x, y, width, height);
+      ctx.fillStyle = color;
+      ctx.rect(x, y, width, height);
+      ctx.fill();
+    }
+
+    canvas.textContent = draw();
 
     // Don't edit the code below here!
 
